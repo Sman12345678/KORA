@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/api/data', methods=['GET'])
 def get_data():
-    url = request.args.get('url', default="https://example.com", type=str)
+    url = request.args.get('url', default="https://copilot.microsoft.com", type=str)
     question = request.args.get('question', '').lower()
 
     # Check if the question is asking about the API's identity
